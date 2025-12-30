@@ -5,17 +5,17 @@
 
 // Konw About Symbol data Type
 
-const id=Symbol("123");
-const anotherId= Symbol("123");
-console.log(id); //123
-console.log(anotherId); // 123
-console.log(id==anotherId);  //false 
+// const id=Symbol("123");
+// const anotherId= Symbol("123");
+// console.log(id); //123
+// console.log(anotherId); // 123
+// console.log(id==anotherId);  //false 
 
 // bigint
 
-const bigNumber = 1223345567887n;
-console.log(bigNumber);
-console.log(typeof bigNumber);
+//const bigNumber = 1223345567887n;
+//console.log(bigNumber);
+//console.log(typeof bigNumber);
 
 
 
@@ -29,20 +29,20 @@ console.log(typeof bigNumber);
 
 // Arry
 
-let superHero= [shaktiman , Doga , BAtMan,]
+//let superHero= [shaktiman , Doga , BAtMan,]
 
 // Object
-let mtObject={
-    name:"Pankaj",
-    Age: 22,
-}
+//let mtObject={
+   // name:"Pankaj",
+   // Age: 22,
+
 
 //Function
 
-const myFunction= function(){
-    console.log("Hello World");
+//const myFunction= function(){
+   // console.log("Hello World");
     
-}
+//}
 
 
 
@@ -93,3 +93,35 @@ function(){}	"function"
 
 
 */
+
+
+                                            /*memory*/
+
+/*
+
+1) stack => (Premptive Data type ) - Variable ka copy milta hi 
+2) Heap => (Non Premptive Data Type ) - Variable ka reference Milta hi
+  
+
+*/
+
+let myYoutubeId = "Pankaj";
+let anotherId=myYoutubeId;
+anotherId="Prem";
+console.log(myYoutubeId);
+console.log(anotherId);
+
+let userOne= {
+   userId:"Pankaj@123",
+   upi:"pankaj@ybl",
+
+}
+
+let userTwo = userOne;
+userTwo.userId="Prem@123";
+console.log(userOne.userId);
+console.log(userTwo.userId);
+
+
+
+
